@@ -58,9 +58,9 @@ export default class MenuHospitales extends Component {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link disabled" aria-disabled="true">
-                    Disabled
-                  </a>
+                  <NavLink className="nav-link" to="/hospitales">
+                    Hospitales
+                  </NavLink>
                 </li>
                 <li className="nav-item dropdown">
                   <a
@@ -77,7 +77,8 @@ export default class MenuHospitales extends Component {
                         <li key={index}>
                           <NavLink
                             to={"/doctores/" + hospital.idhospital}
-                            className="dropdown-item">
+                            className="dropdown-item"
+                          >
                             {hospital.nombre}
                           </NavLink>
                         </li>
